@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wendy Fabiola Charcas Paredes | Licenciada en Ciencias de la Información – Archivología</title>
+  <meta name="description" content="Portafolio profesional de Wendy Fabiola Charcas Paredes, Licenciada en Ciencias de la Información con mención en Archivología. Especialista en archivos, digitalización y gestión documental. La Paz, Bolivia." />
+  <meta property="og:title" content="Wendy Fabiola Charcas Paredes | Portafolio Profesional" />
+  <meta property="og:description" content="Especialista en archivos, digitalización y gestión de información. La Paz, Bolivia." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wendy Fabiola Charcas Paredes",
+    "jobTitle": "Licenciada en Ciencias de la Información – Mención en Archivología",
+    "address": { "@type": "PostalAddress", "addressLocality": "La Paz", "addressCountry": "BO" },
+    "email": "mailto:wendycharcasp@gmail.com"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand">Wendy Charcas</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#competencias">Competencias</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#reconocimientos">Reconocimientos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#" id="cvLink" class="nav-cta" download>Descargar CV</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Hola, soy <span id="name"></span></h1>
+          <p class="lead" id="title"></p>
+          <p id="tagline"></p>
+          <p class="tl-meta">📍 <span id="location"></span></p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">Contactar</a>
+            <a href="#" id="cvLink2" class="btn btn-outline" download>Descargar CV (PDF)</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img id="photo" alt="Foto profesional de Wendy Fabiola Charcas Paredes" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22260%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23eef2f8%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2272%22 fill=%22%231F3864%22>WC</text></svg>'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sobre mí</h2>
+        </div>
+        <p class="about-text" id="aboutText"></p>
+      </div>
+    </section>
+
+    <!-- Competencias -->
+    <section id="competencias" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Competencias clave</h2>
+          <p>Habilidades técnicas y personales orientadas a la gestión documental y la digitalización.</p>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Técnicas</h3>
+            <div class="chips" id="techSkills"></div>
+          </div>
+          <div class="card">
+            <h3>Personales</h3>
+            <div class="chips" id="personalSkills"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="section alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experiencia laboral</h2>
+          <p>Trayectoria en archivos, bibliotecas y digitalización.</p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- Educación -->
+    <section id="educacion" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Educación</h2>
+        </div>
+        <div class="grid grid-2" id="educationList"></div>
+      </div>
+    </section>
+
+    <!-- Formación continua -->
+    <section id="formacion" class="section alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Formación continua</h2>
+          <p>Cursos, talleres y seminarios (filtrables por categoría).</p>
+        </div>
+        <div class="course-search">
+          <input type="text" id="courseSearch" placeholder="Buscar curso o institución..." />
+        </div>
+        <div class="course-filters" id="courseFilters"></div>
+        <div class="grid grid-3" id="courseList"></div>
+      </div>
+    </section>
+
+    <!-- Reconocimientos -->
+    <section id="reconocimientos" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Reconocimientos</h2>
+        </div>
+        <div class="grid grid-2" id="recognitionList"></div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>¿Trabajamos juntos? Escríbeme.</p>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <div class="contact-item">📧 <a href="#" id="emailLink"></a></div>
+            <div class="contact-item">📍 La Paz, Bolivia</div>
+            <div class="contact-item">📄 <a href="#" id="cvLink3" download>Descargar CV (PDF)</a></div>
+          </div>
+          <div class="card">
+            <h3>Disponible para oportunidades</h3>
+            <p>Archivología, gestión documental, digitalización y bibliotecología.</p>
+            <div class="mt-24">
+              <a href="mailto:wendycharcasp@gmail.com" class="btn btn-primary">Enviar correo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Wendy Fabiola Charcas Paredes · Portafolio profesional</p>
+      <p><a href="#inicio">Volver arriba</a></p>
+    </div>
+  </footer>
+
+  <button id="topBtn" class="btn btn-primary" style="position:fixed;bottom:20px;right:20px;display:none;border-radius:50%;width:48px;height:48px;justify-content:center;padding:0;">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
